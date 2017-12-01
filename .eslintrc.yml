@@ -1,0 +1,45 @@
+root: true
+parser: babel-eslint
+extends: airbnb
+parserOptions:
+  ecmaVersion: 7
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+    destructuring: true
+    spread: true
+env:
+  browser: true
+settings:
+  import/resolver:
+    node:
+      moduleDirectory:
+       - node_modules
+       - app
+plugins:
+  - react
+  - import
+rules:
+  no-console: off
+  no-alert: off
+  no-unused-vars: warn
+  semi:
+    - warn
+    - never
+  new-cap: off
+  quotes:
+    - warn
+    - single
+  react/prop-types: off
+  react/prefer-stateless-function: off
+  no-else-return: off
+  no-use-before-define: off
+  no-param-reassign: off
+  jsx-a11y/href-no-hash: off
+  jsx-a11y/no-static-element-interactions: off
+  react/no-array-index-key: off
+  react/forbid-prop-types: off
+  one-var: off
+  linebreak-style: off
+  jsx-a11y/click-events-have-key-events: off
+  import/extensions: off
